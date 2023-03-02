@@ -44,7 +44,7 @@ public class Usuarios {
 	
 	/**
 	* Método que define o valor do bônus anual da classe usuario.
-	* @param beneficio Valor do bônus (inteiro, "reais"), em int
+	* @param bonus_por_ano Valor do bônus (inteiro, "reais"), em int
 	*/
 	public void set_Bonus_por_ano(int bonus_por_ano) {
 		this.bonus_por_ano = bonus_por_ano;
@@ -52,7 +52,7 @@ public class Usuarios {
 	
 	/**
 	* Método que define o valor do salário da classe usuario.
-	* @param beneficio Valor do salário (inteiro, "reais"), em int
+	* @param salario_base Valor do salário (inteiro, "reais"), em int
 	*/
 	public void set_SalarioBase(int salario_base) {
 		this.salario_base = salario_base;

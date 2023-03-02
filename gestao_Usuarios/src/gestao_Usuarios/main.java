@@ -69,6 +69,12 @@ public class main {
 		
 		System.out.println("\n---------------\n Iniciando testes \n---------------\n");
 		
+		System.out.println("Lista de usuários padrão!\n");
+		System.out.println(ListaUsuarios);
+		
+		System.out.println("Lista de vendas!\n");
+		System.out.println(ListaVendas);
+		
 		// Operações com Listas!
 		
 		Operacoes_Listas op_listas = new Operacoes_Listas(); 
@@ -91,48 +97,50 @@ public class main {
 		
 		// Operações para manipulação de dados de cargos!
 		
-		operacoes op = new operacoes(); 
+		Operacoes op = new Operacoes(); 
 		
 		// Pergunta 1
 		System.out.println("\n---------------\n Pergunta 1 \n---------------\n");
-		System.out.println(op.pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 12, 2021)); 
-		System.out.println(op.pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 3, 2014)); 
-		System.out.println(op.pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 4, 2022));
-		System.out.println(op.pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 4, 1998));
+		System.out.println(op.Pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 12, 2021)); 
+		System.out.println(op.Pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 3, 2014)); 
+		System.out.println(op.Pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 4, 2022));
+		System.out.println(op.Pagamentos_total_do_mes(ListaUsuarios, ListaVendas, 4, 1998));
 				
 		// Pergunta 2
 		System.out.println("\n---------------\n Pergunta 2 \n---------------\n");
-		System.out.println(op.pagamentos_salario_do_mes(ListaUsuarios, 12, 2021)); 
-		System.out.println(op.pagamentos_salario_do_mes(ListaUsuarios, 3, 2014)); 
-		System.out.println(op.pagamentos_salario_do_mes(ListaUsuarios, 3, 2015));
-		System.out.println(op.pagamentos_salario_do_mes(ListaUsuarios, 3, 1997));
+		System.out.println(op.Pagamentos_salario_do_mes(ListaUsuarios, 12, 2021)); 
+		System.out.println(op.Pagamentos_salario_do_mes(ListaUsuarios, 3, 2014)); 
+		System.out.println(op.Pagamentos_salario_do_mes(ListaUsuarios, 3, 2015));
+		System.out.println(op.Pagamentos_salario_do_mes(ListaUsuarios, 3, 1997));
 		
 		// Pergunta 3
 		System.out.println("\n---------------\n Pergunta 3 \n---------------\n");
-		System.out.println(op.total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 12, 2021)); 
-		System.out.println(op.total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 12, 2014)); 
-		System.out.println(op.total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 4, 2022));
-		System.out.println(op.total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 4, 1973));
+		System.out.println(op.Total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 12, 2021)); 
+		System.out.println(op.Total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 12, 2014)); 
+		System.out.println(op.Total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 4, 2022));
+		System.out.println(op.Total_pago_beneficios(ListaUsuariosBeneficiados, ListaVendas, 4, 1973));
 		
 		// Pergunta 4
 		System.out.println("\n---------------\n Pergunta 4 \n---------------\n");
-		System.out.println(op.quem_recebeu_mais(ListaUsuarios, ListaVendas, 12, 2021));
-		System.out.println(op.quem_recebeu_mais(ListaUsuarios, ListaVendas, 3, 2014));
-		System.out.println(op.quem_recebeu_mais(ListaUsuarios, ListaVendas, 1, 2017));
-		System.out.println(op.quem_recebeu_mais(ListaUsuarios, ListaVendas, 1, 1967));
+		System.out.println(op.Quem_recebeu_mais(ListaUsuarios, ListaVendas, 12, 2021));
+		System.out.println(op.Quem_recebeu_mais(ListaUsuarios, ListaVendas, 3, 2014));
+		System.out.println(op.Quem_recebeu_mais(ListaUsuarios, ListaVendas, 1, 2017));
+		System.out.println(op.Quem_recebeu_mais(ListaUsuarios, ListaVendas, 1, 1967));
 		
 		// Pergunta 5
 		System.out.println("\n---------------\n Pergunta 5 \n---------------\n");
-		System.out.println(op.quem_recebeu_mais_beneficio(ListaUsuariosBeneficiados, ListaVendas, 12, 2021));
-		System.out.println(op.quem_recebeu_mais_beneficio(ListaUsuariosBeneficiados, ListaVendas, 12, 2016));
-		System.out.println(op.quem_recebeu_mais_beneficio(ListaUsuariosBeneficiados, ListaVendas, 1, 2022));
+		System.out.println(op.Quem_recebeu_mais_beneficio(ListaUsuariosBeneficiados, ListaVendas, 12, 2021));
+		System.out.println(op.Quem_recebeu_mais_beneficio(ListaUsuariosBeneficiados, ListaVendas, 12, 2016));
+		System.out.println(op.Quem_recebeu_mais_beneficio(ListaUsuariosBeneficiados, ListaVendas, 1, 2022));
 		
 		// Pergunta 6
 		System.out.println("\n---------------\n Pergunta 6 \n---------------\n");
-		System.out.println(op.vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 12, 2021)); 
-		System.out.println(op.vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 12, 2015)); 
-		System.out.println(op.vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 01, 2022)); 
-		System.out.println(op.vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 01, 2077)); 
+		System.out.println(op.Vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 12, 2021)); 
+		System.out.println(op.Vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 12, 2015)); 
+		System.out.println(op.Vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 01, 2022)); 
+		System.out.println(op.Vendedor_que_vendeu_mais(ListaUsuariosVendedores, ListaVendas, 01, 2077)); 
+		
+		System.out.println("\n---------------\n Fim \n---------------\n");
 		
 	}
 }
