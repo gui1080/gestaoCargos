@@ -1,6 +1,6 @@
 # gestaoCargos
 
-Processo seletivo Sinerji Gestão e Sistemas. Sistema de gestão de cargos e folhas de pagamento, demonstrando programação orientada a objetos em Java.
+Processo seletivo Sinerji Gestão e Sistemas. Sistema de gestão de cargos e folhas de pagamento, demonstrando programação orientada a objetos em Java. Feito na IDE Eclipse.
 
 Guilherme Braga Pinto
 
